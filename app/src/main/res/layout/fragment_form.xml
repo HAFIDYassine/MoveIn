@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    tools:context=".fragment.FormFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/votre_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/entrez_votre_destination"
+            android:textColor="#2d6c7e"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/dest_btn_help"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|bottom"
+            android:background="@drawable/baseline_help_outline_24"
+            android:elevation="4dp"
+            android:onClick="onHelpClick"
+            android:padding="8dp"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/id_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:background="#cbcbcb"
+        android:hint="@string/u1_1_1"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:textColor="#2c3e54" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/votre_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/entrer_votre_position_ou_scanner"
+            android:textColor="#2d6c7e"
+            android:textSize="18sp"
+
+            />
+
+        <Button
+            android:id="@+id/position_btn_help"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|bottom"
+            android:background="@drawable/baseline_help_outline_24"
+            android:elevation="4dp"
+            android:onClick="onHelpClick"
+            android:padding="8dp"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/id_position"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:background="#cbcbcb"
+            android:hint="@string/u1_1_1"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:textColor="#2c3e54" />
+
+        <Button
+            android:id="@+id/btnscanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="10dp"
+
+            android:backgroundTint="#45858f"
+            android:text="@string/scanner" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btndemarrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#45858f"
+        android:text="@string/demarrer" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/route_icon_icons_com_64564"
+        />
+
+</LinearLayout>
